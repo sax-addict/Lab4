@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--Mason Lindley
+
+Responsive design could be improved by making the Images scalable at ~800px or less-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Lab 4" content="Lab 4">
+    <meta name="keywords" content="Lab 4, Lab, 4">
+    <meta name="author" content="Mason Lindley">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+    <script>
+        //this is a Javascript comment
+        function myFunction() {
+            document.body.style.background = 'black';
+        }
+    </script>
+    <style>
+    /*This is a CSS comment*/
+    .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    background-color: #127683;
+    padding: 20px;
+    }
+    .grid-item {
+    background-color: rgba(82, 238, 243, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    }
+    @media (max-width: 1024px) {
+        .grid-container {
+            background-color: orangered;
+        }
+        .grid-item {
+            background-color: orange;
+        }
+    }    
+    @media (max-width: 768px) {
+        .grid-container {
+            background-color: cornflowerblue;
+        }
+        .grid-item {
+            background-color: paleturquoise;
+        }
+    }    
+    </style>
+</head>
+<body id="Body">
+
+<div class="grid-container">
+  <div class="grid-item item1"><img src="Placeholder200.png" alt="Image"></div>
+  <div class="grid-item item2"><img src="Placeholder200.png" alt="Image"></div>
+  <div class="grid-item item3"><img src="Placeholder200.png" alt="Image"></div>  
+</div>
+<p></p>
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+</body>
+</html>
+
+
